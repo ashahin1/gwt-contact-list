@@ -75,7 +75,7 @@ public class ContactListView extends Composite{
 				        	if(!ContactList.anyFormIsOpened){
 				        		ContactList.anyFormIsOpened = true;
 				        		//We apply a style (background color in the row) when user clicks in a button
-								contactListTable.getRowFormatter().addStyleName(rowClicked, "row-selected");
+								//contactListTable.getRowFormatter().addStyleName(rowClicked, "row-selected");
 								String contactName = ContactList.contactListData.get(rowClicked-1).getName();
 								//We remove the selected row and reload the View.
 								if(Window.confirm("Do you want to remove: "+contactName +" ?")){
